@@ -1,0 +1,83 @@
+.menu__container{
+
+  display: flex;
+  flex-direction: row;
+
+
+
+}
+
+.titulo{
+  margin-top: 60px;
+  border-radius: 6px 6px 0px 0px;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background: rgb(0,0,0);
+  background: linear-gradient(207deg, rgba(0,0,0,0.8015581232492998) 19%, rgba(174,209,238,1) 100%);
+}
+.menu-img{
+ width: 100%;
+ background-image: url("../../../assets/img/predios.jpg");
+ background-repeat: no-repeat;
+ background-position: top;
+ background-size: cover;
+ border-bottom-right-radius: 6px;
+
+}
+
+
+.menu-login{
+  border-bottom-left-radius: 6px;
+  display: flex;
+  height: 700px;
+  width: 100%;
+   align-items: center;
+  justify-content: center;
+  background: rgb(174,209,238);
+  background: linear-gradient(207deg, rgba(174,209,238,1) 44%, rgba(0,0,0,1) 100%);
+
+}
+
+
+.menu-formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-formulario > input{
+  width: 500px;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+  outline: 0;
+  font-size: 20px;
+
+}
+
+.menu-formulario > button{
+  background-color: #a2b0e9;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: Segoe UI;
+}
+
+
+@font-face {
+  font-family:'Raleway', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+}
+
+.menu-formulario > button:hover{
+  cursor: pointer;
+  background-color: rgb(81, 166, 81);
+
+}
+
+
+
+

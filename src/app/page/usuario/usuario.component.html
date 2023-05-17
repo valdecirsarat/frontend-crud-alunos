@@ -1,0 +1,86 @@
+<div class="cabecalho-container">
+
+  <div class="cabecalho-texto">
+    <p>CRUD: Create - Read - Update - Delete  </p>
+  </div>
+
+</div>
+<section>
+  <div class="menu-container">
+    <button mat-raised-button color="primary" (click)="mudarDisplay()">Criar</button>
+
+    <input class="formulario-input" [(ngModel)]="buscaPorNome" type="text" placeholder=" buscar por nome">
+
+
+  </div>
+
+  <!--[ngStyle]="{'height': display2 ? '0px' : '300px', 'transition': 'height 0.8s ease'}"
+      (click)=" display2 = !display2
+  -->
+
+  <div [ngStyle]="{'display': display}" class="cadastro-container">
+
+    <div class ="cadastro-formulario">
+       <div class="formulario-input"><span>Nome</span><input [(ngModel)]="nome" type="text" required placeholder="Nome"></div>
+       <div class="formulario-input"><span>CPF</span> <input [(ngModel)]="cpf" type="text" required placeholder="999.999.999-99"></div>
+       <div class="formulario-input"><span>Contato</span> <input [(ngModel)]="contato" type="tel" required></div>
+       <div class="formulario-input"><span>Cep</span> <input [(ngModel)]="cep" type="text" required></div>
+       <div><button mat-raised-button (click)="cadastrar()">Salvar</button></div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="tabela-container">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>CPF</th>
+        <th>Contato</th>
+        <th>CEP</th>
+        <th>Logradouro</th>
+        <th>Bairro</th>
+        <th>Localidade</th>
+        <th>UF</th>
+        <th>Editar</th>
+        <th>Excluir</th>
+      </tr>
+      <tr *ngFor="let alunos of alunosData">
+        <td class="tabela-componente">{{alunos.id}}</td>
+        <td>{{alunos.nome}}</td>
+        <td>{{alunos.cpf ? alunos.cpf : "N/I"}}</td>
+        <td>{{alunos.contato}}</td>
+        <td>{{alunos.edereco.cep}}</td>
+        <td>{{alunos.edereco.logradouro}}</td>
+        <td>{{alunos.edereco.bairro}}</td>
+        <td>{{alunos.edereco.localidade}}</td>
+        <td>{{alunos.edereco.uf}}</td>
+        <td>
+          <button (click)="update(alunos)"  mat-icon-button class="btn-icon-edit"  matTooltip="Editar">
+            <mat-icon class="btn-edit">edit</mat-icon>
+          </button>
+        </td>
+        <td>
+          <button (click)="deletar(alunos)" mat-icon-button class="btn-icon-delete" matTooltip="Excluir">
+            <mat-icon class="btn-delete" >delete_forever</mat-icon>
+          </button>
+        </td>
+
+
+      </tr>
+
+
+    </table>
+  </div>
+
+</section>
+
+
+
+
+
+

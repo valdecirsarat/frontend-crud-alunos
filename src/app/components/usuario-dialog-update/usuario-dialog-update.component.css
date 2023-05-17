@@ -1,0 +1,18 @@
+.dialog-campos{
+  display: flex;
+  align-items: stretch;
+  margin: 10px 0px;
+}
+.mat-dialog-actions{
+  display: flex;
+  justify-content: space-between;
+}
+input{
+  width: 300px;
+  height: 22px;
+  border-radius: 4px;
+  border: 1px solid black
+}
+h1{
+  text-align: center;
+}

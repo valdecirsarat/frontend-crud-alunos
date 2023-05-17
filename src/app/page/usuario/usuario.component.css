@@ -1,0 +1,171 @@
+.cabecalho-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  background-image: url("../../../assets/img/predios.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+}
+section{
+  background-color: white;
+   font-family: 'Segoe UI';
+}
+.cabecalho-img{
+  margin: 0px 50px 0px 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  border: 2px solid rgba(178, 215, 242); ;
+
+}
+.cabecalho-img > img{
+  max-width: 150px;
+  max-height: 150px;
+  border-radius:70px;
+}
+.cabecalho-texto{
+  height: 200px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Segoe UI";
+  margin: 0px 50px 0px 50px;
+}
+.cabecalho-buttom{
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.cabecalho-buttom > button{
+  width: 150px;
+}
+
+.menu-container{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 15px;
+}
+
+.menu-container > button{
+
+  width: 140px;
+  font-family: 'Segoe UI';
+  font-weight: bold;
+
+
+}
+.menu-container > button:hover{
+  background-color: rgba(42, 42, 242, 0.413);
+  cursor: pointer;
+}
+.tabela-container{
+  margin-top: 15px;
+
+  display: flex;
+  border-radius: 5px;
+
+
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+
+}
+th{
+  background-color: cadetblue;
+  font-weight: bold;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+tr:nth-child(odd){
+  background-color:rgba(178, 215, 242, 0.887);
+
+}
+
+td {
+  font-family: 'Segoe UI';
+
+}
+.cadastro-container{
+
+  flex-direction: row;
+
+  height: 150px;
+
+}
+.cadastro-formulario{
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  display: flex;
+  font-family: 'Segoe UI';
+  font-size: 16px;
+}
+.formulario-input{
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  border: 1px solid black;
+  padding: 5px;
+}
+.formulario-input >span {
+  margin-right: 4px;
+}
+.formulario-input > input{
+  width: 200px;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+.formulario-input:focus-within{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-color: rgb(66, 66, 120);
+
+
+}
+.cadastro-formulario > div button{
+  background-color: rgb(22,181,22);
+  color: white;
+    width: 100px;
+
+}
+.cadastro-formulario > div button:active{
+  margin-top: 2px;
+
+}
+.cadastro-formulario > div button:hover{
+  cursor: pointer;
+}
+.btn-delete{
+  color: red;
+}
+.btn-edit{
+  color: rgb(60, 60, 157);
+}
+.btn-icon-edit:hover{
+  background-color: rgba(60, 60, 157, 0.312);
+}
+.btn-icon-delete:hover{
+  background-color: rgba(255, 0, 0, 0.312)
+}
